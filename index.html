@@ -8,23 +8,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+      .manrope{
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
     <!-- font awesome icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind script -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
             }
           }
         }
-      </script>
+      }
+    </script>
 </head>
-<body>
-    
+<body class="manrope bg-[#FFFFFF]">
+    <!-- header-->
+     <header>
+        <nav class="flex justify-between  items-center w-[90%] mx-auto pt-4">
+          <div class=" flex  items-center gap-1">
+            <samp class="text-xs cursor-pointer "><i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1 text-black hover:bg-green-300"></i></samp>
+            <h1 class="text-[#212121] font-bold">Rinterio</h1>
+          </div>
+          <div class="hidden lg:flex">
+            <ul class="flex gap-4 items-center mr-5 cursor-pointer">
+              <li class="text-gray-700 font-bold text-xs hover:text-gray-800">Home</li>
+              <li class="text-gray-500 font-semibold text-xs hover:text-gray-700">Services</li>
+              <li class="text-gray-500 font-semibold text-xs hover:text-gray-700">Portfolio</li>
+              <li class="text-gray-500 font-semibold text-xs hover:text-gray-700">Blogs</li>
+              <li class="text-gray-500 font-semibold text-xs hover:text-gray-700">Contact Us</li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex">
+            <div class="items-center flex gap-2 cursor-pointer ">
+              <samp class="text-xs text-[#737373] bg-[#E9E9E9] rounded-3xl p-1 hover:bg-gray-300"><i class="fa-solid fa-magnifying-glass"></i></samp>
+              <samp class="text-xs text-[#737373] bg-[#E9E9E9] rounded-3xl p-1 hover:bg-gray-300"><i class="fa-solid fa-cart-shopping"></i></samp>
+              <button class="flex items-center gap-2 bg-[#ABEF5F] rounded-lg px-1 hover:bg-green-300">
+                <h3 class="text-xs text-stone-950 font-semibold">Book Consult</h3>
+                <samp class="items-center"><i class=" text-[0.50rem] fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1 text-white  font-semibold mb-2"></i></samp>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="static">
+          <div class="absolute top-4 right-3">
+            <samp class=" text-xs text-gray-800 bg-slate-100 hover:bg-slate-300 rounded-full p-2 cursor-pointer lg:hidden"><i class="fa-solid fa-bars"></i></samp>
+          </div>
+        </div>
+        <!-- main -->
+        <main>
+          <div class="text-center justify-center w-[90%] mx-auto">
+            <div class="mt-5 -mb-16 size-40 w-[50%] lg:w-[30%] mx-auto">
+              <img class="static items-center" src="assets/banner.png" alt="Same issu this rejen not display">
+            </div>
+            <div class="mt-9 lg:mt-20">
+              <h2 class="text-[#212121] font-semibold text-4xl lg:font-bold lg:text-5xl">A barn house of this design has a striking appearance</h2>
+              <p class="text-[#494949] mt-6 text-base text-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <div class="w-[30%] lg:w-[13%] mx-auto">
+              <button class="mb-24 mt-8 flex items-center gap-2 bg-[#ABEF5F80] rounded-lg px-1 hover:bg-green-200">
+                <h3 class="text-xs text-stone-950 font-semibold">View Details</h3>
+                <samp class="items-center"><i class=" text-[0.50rem] fa-solid fa-arrow-right -rotate-45 bg-green-500 rounded-full p-1 text-white  font-semibold"></i></samp>
+              </button>
+            </div>
+          </div>
+          <div class="bg-slate-200">
+
+          </div>
+        </main>
+     </header>
 </body>
 </html>
